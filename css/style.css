@@ -1,0 +1,39 @@
+.morecontent span {
+    display: none;
+}
+.morelink {
+    display: block;
+}
+
+.image-bg {
+	height: 150px;
+	background-image: url('../img/coffee.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+.distance {
+	margin-bottom: 7px !important;
+}
+
+.rating-stars i {
+	color: #ffca28;
+	font-size: 20px;
+}
+.cafe-around {
+	background-color: #ffca28;
+	padding: 10px;
+}
+
+.cafe-around h5 {
+	text-transform: uppercase;
+	margin: 0;
+	position: relative;
+	margin-left: 24px;
+}
+
+.cafe-around i {
+	position: absolute;
+	left: 0;
+}
+

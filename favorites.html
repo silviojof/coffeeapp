@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+    	<meta name="apple-mobile-web-app-status-bar-style" content="black"> 
+	
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	   	<link rel="stylesheet" href="css/materialize.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		
+		<script src="js/jquery-3.2.1.min.js"></script>
+		<script src="js/materialize.min.js"></script>
+
+		<title>Coffee App</title>
+	</head> 
+	<body>
+		<!-- Header -->
+		<header class="navbar-fixed">
+			<nav>
+		    <div class="nav-wrapper">
+		      <a href="#!" class="brand-logo">CoffeeApp</a>
+		      <ul class="right">
+		        <li><a href="index.html"><i class="material-icons">navigate_before</i></a></li>
+		      </ul>
+		    </div>
+		  </nav>
+	    </header>
+
+	    <!-- Main Content -->
+	    <div class="content">
+
+	    	<!-- Empty DIV for Google Maps API -->
+	    	<div id="results"></div>
+
+	      	<div class=" container center fav-warning"></div>
+
+	      	<!-- Modal Structure -->
+			<div id="modal1" class="modal modal-fixed-footer modal-review">
+			  	<div class="modal-footer">
+					<nav>
+				    	<div class="nav-wrapper">
+				    		<a class="brand-logo">Reviews</a>
+				    		<ul class="right">
+				        		<li><a class="modal-close"><i class="material-icons">close</i></a></li>
+				      		</ul>
+				    	</div>
+				  	</nav>
+	    		</div>
+			    <div class="modal-content">
+			      	<h5 class="title"></h5>
+			      	<ul class="collection reviews"></ul>
+			    </div>
+			</div>
+
+	      	<ul class="collection fav-list"></ul>
+
+	    </div>
+
+	    <!-- Google Maps Scripts -->
+	    <script src="https://apis.google.com/js/api.js" type="text/javascript"></script>
+	    <script async defer
+    		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCPoQ44G30_lu0xFr6r2tRm1G0hy5dOBlM&libraries=places">
+    	</script>
+
+    	<!-- Project Script -->
+    	<script src="js/script.js"></script>
+		<script>
+			$(function(){
+				getFavorites();
+			});
+			
+		</script>
+
+	</body>
+</html>
+
